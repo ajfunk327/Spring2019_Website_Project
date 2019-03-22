@@ -1,0 +1,56 @@
+h1 {
+  font-family: 'Gruppo';
+  font-size: 100px;
+  text-align: center;
+  letter-spacing: 3px;
+}
+p {
+  font-family: 'Gruppo';
+  font-size: 22px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: center;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  justify-content: center;
+  transform: rotate(180deg);
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: center;
+  -webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.column img:hover {
+  -webkit-filter: blur(0);
+	filter: blur(0);
+}
+
+.spoon {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  justify-content: flex-end;
+}
+.spoon img {
+  margin-top: 4px;
+  vertical-align: center;
+}
+.spoon img:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
+}
