@@ -4,6 +4,18 @@ h1 {
   text-align: center;
   letter-spacing: 3px;
 }
+.neon {
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #00FF00,
+    0 0 80px #00FF00,
+    0 0 90px #00FF00,
+    0 0 100px #00FF00,
+    0 0 150px #00FF00;
+}
 p {
   font-family: 'Gruppo';
   font-size: 22px;
@@ -28,15 +40,19 @@ p {
 .column img {
   margin-top: 8px;
   vertical-align: center;
+  opacity: 0.5;
   -webkit-filter: blur(3px);
 	filter: blur(3px);
 	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .column img:hover {
+  opacity: 1.0;
   -webkit-filter: blur(0);
-	filter: blur(0);
+  filter: blur(0);
+  color: #00FF00;
+  box-shadow: 0 5px 15px #00FF00;
 }
 
 .spoon {
