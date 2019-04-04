@@ -51,8 +51,15 @@ p {
   opacity: 1.0;
   -webkit-filter: blur(0);
   filter: blur(0);
-  color: #00FF00;
-  box-shadow: 0 5px 15px #00FF00;
+  box-shadow: 
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #00FF00,
+    0 0 80px #00FF00,
+    0 0 90px #00FF00,
+    0 0 100px #00FF00,
+    0 0 150px #00FF00;
 }
 
 .spoon {
