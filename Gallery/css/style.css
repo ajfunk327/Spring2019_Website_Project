@@ -62,18 +62,32 @@ p {
     0 0 150px #00FF00;
 }
 
-.spoon {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-  justify-content: flex-end;
+.container {
+  position: absolute;
+  vertical-align: left;
+  height:50%;
+  width:50%;
 }
-.spoon img {
-  margin-top: 4px;
-  vertical-align: center;
+
+/* Make the image responsive */
+.container img {
+  width: auto;
+  height: auto;
 }
-.spoon img:hover {
-  -ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.5);
-}
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+  width: 40%;
+  height: 40%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: Transparent;
+  color: white;
+  padding: 2px 2px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+};
