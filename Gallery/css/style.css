@@ -34,7 +34,6 @@ p {
   max-width: 25%;
   padding: 0 4px;
   justify-content: center;
-  transform: rotate(180deg);
 }
 
 .column img {
@@ -45,7 +44,9 @@ p {
 	filter: blur(3px);
 	-webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
+  image-orientation: from-image;
 }
+
 
 .column img:hover {
   opacity: 1.0;
@@ -60,6 +61,7 @@ p {
     0 0 90px #00FF00,
     0 0 100px #00FF00,
     0 0 150px #00FF00;
+    image-orientation: from-image;
 }
 
 .container {
@@ -73,6 +75,7 @@ p {
 .container img {
   width: auto;
   height: auto;
+  image-orientation: from-image;
 }
 
 /* Style the button and place it in the middle of the container/image */
